@@ -1,15 +1,17 @@
 {{ define "content" }}
-<!-- <div style="background: linear-gradient( rgba(0, 0, 0,  .1), rgba(0, 0, 0, 1) ),url('{{ .Params.thumb_img_path | relURL }}') no-repeat center;" class="header-post">
-  <div class="info">
-    <h1 style="color: rgb(255, 255, 255);">KEN BURNS HEADERS ARE THE BEST</h1>
-    <div class="meta">
-      By <a href="https://luublog.cf" target="_b">Duy Lưu</a> on <time class="published"
-        datetime="{{ .Date | dateFormat "2006-01-02 15:04" }}">{{ .Date | dateFormat "Monday, January 2, 2006" }}</time>
-    </div>
-  </div> -->
-</div>
+
+
   <article class="post post-full">
-    <header class="post-header">
+    <div style="background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 10) ),url('{{ .Params.content_img_path | relURL }}') no-repeat center center;" class="header-post">
+      <div class="info">
+        <h1 style="color: rgb(255, 255, 255);">{{ .Params.title }}</h1>
+        <div class="meta">
+          By <a href="https://luublog.cf" target="_b">Duy Lưu</a> on <time class="published"
+            datetime="{{ .Date | dateFormat "2006-01-02 15:04" }}">{{ .Date | dateFormat "Monday, January 2, 2006" }}</time>
+        </div>
+      </div>
+    </div>
+    <!-- <header class="post-header">
       <h1 class="post-title underline">{{ .Params.title }}</h1>
     </header><!-- .post-header -->
     {{ if .Params.subtitle }}
@@ -17,11 +19,11 @@
       {{ .Params.subtitle | safeHTML }}
     </div><!-- .post-subtitle -->
     {{ end }}
-    {{ if .Params.thumb_img_path }}
+    {{ if .Params.content_img_path }}
     <div class="post-thumbnail">
-      <img src="{{ .Params.thumb_img_path | relURL }}" alt="{{ .Params.title }}" />
-    </div><!-- .post-thumbnail -->
-    {{ end }}
+      <img src="{{ .Params.content_img_path | relURL }}" alt="{{ .Params.title }}" />
+    </div>
+    {{ end }} -->
     <div class="post-content">
       {{ .Content | safeHTML }}
     </div><!-- .post-content -->
