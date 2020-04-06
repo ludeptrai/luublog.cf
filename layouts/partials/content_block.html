@@ -6,10 +6,10 @@
       <img src="{{ .section.image | relURL }}" alt="{{ .section.title }}" />
     </div>
     {{ end }}
-    <div class="block-content">
+    <div  class="block-content">
       {{ partial "markdownify-block" .section.content }}
       {{ if .section.actions }}
-      <p class="block-cta">
+      <p class="block-cta" >
         {{ range $action := .section.actions }}
         <a href="{{ $action.url | relURL }}" class="button">{{ $action.label }}</a>
         {{ end }}

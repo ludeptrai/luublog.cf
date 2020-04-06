@@ -2,7 +2,7 @@
   {{ if .section.title }}
   <h2 class="hero-title">{{ .section.title }}</h2>
   {{ else }}
-  <h2 class="hero-title">Hi, mình là {{ .Site.Data.author.name }}.</h2>
+  <!-- <h2 class="hero-title">Hi, mình là  {{ .Site.Data.author.name }}.</h2> -->
   {{ end }}
   <div class="hero-text">
     {{ partial "markdownify-block" .section.content }}

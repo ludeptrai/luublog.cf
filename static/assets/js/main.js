@@ -24,3 +24,4 @@ document.querySelector('#to-top').addEventListener('click', function (e) {
   e.preventDefault();
   document.querySelector('#page').scrollIntoView({ behavior: 'smooth' });
 });
+

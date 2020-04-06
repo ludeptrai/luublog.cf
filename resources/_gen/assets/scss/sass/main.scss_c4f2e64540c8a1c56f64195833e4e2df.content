@@ -5,6 +5,7 @@
  * normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css
  * ----------------------------------------------------------------------------
  */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap");
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
@@ -688,7 +689,7 @@ img {
 .site-footer {
   margin-left: auto;
   margin-right: auto;
-  max-width: 760px; }
+  max-width: 1080px; }
 
 .style-overflow .site-main {
   margin-left: 0;
@@ -1131,11 +1132,100 @@ img {
 .block-thumbnail {
   margin-bottom: 1.66667em; }
   .block-thumbnail img {
+    padding-right: 30px;
     width: 33.33%;
-    float: left; }
+    float: left;
+    max-width: 200px; }
 
 .block-cta .button {
   margin-right: 15px; }
+
+.header-post {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 50vw;
+  min-height: 300px;
+  max-height: 350px;
+  min-width: 300px;
+  color: #eee;
+  font-family: 'Baloo Thambi 2', cursive; }
+
+.header-post a {
+  color: #eee; }
+
+.logo {
+  border: 2px solid #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  margin: 20px;
+  padding: 0px 10px;
+  font-weight: 900;
+  font-size: 1.1em;
+  line-height: 1;
+  box-sizing: border-box;
+  height: 40px; }
+
+.sides, .info {
+  flex: 0 0 auto;
+  width: 50%; }
+
+.info {
+  width: 100%;
+  padding: 25% 10% 0 10%;
+  text-align: center;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
+
+.info h4, .meta {
+  font-size: 0.7em; }
+
+@keyframes grow {
+  0% {
+    transform: scale(1) translateY(0px); }
+  50% {
+    transform: scale(1.2) translateY(-400px); } }
+
+.content {
+  padding: 5% 10%;
+  text-align: justify; }
+
+.sidenav {
+  width: 130px;
+  position: fixed !important;
+  z-index: 1;
+  top: 20px;
+  right: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0; }
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block; }
+
+.sidenav a:hover {
+  color: #064579; }
+
+.main {
+  margin-right: 140px;
+  /* Same width as the sidebar + left position in px */
+  padding: 0px 10px; }
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }
 
 /**
  * Site Footer
