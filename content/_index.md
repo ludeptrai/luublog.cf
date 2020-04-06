@@ -4,9 +4,7 @@ sections:
   - type: heroblock
     section_id: hero
     component: hero_block.html
-    content: >-
-      This section can contain a subtitle or tagline. The recommended length is
-      one to three sentences, but can be changed as you prefer.
+    content: ''
   - type: contentblock
     title: About
     section_id: about
@@ -15,18 +13,19 @@ sections:
         url: /contact
     component: content_block.html
     content: >-
-      This is the "about" excerpt. It can be used to provide a paragraph about
-      yourself that people can read on the homepage to get a sense of who you
-      are. There also exists a dedicated about page where you can write more
-      about yourself for those who are interested.
+      Hi, mình là Phan Duy Lưu, hiện tại đang là AI engineer tại TMA solutions.
+      Blog này là nơi tổng hợp 1 số bài viết thú vị trên mạng và những mẹo vặt
+      mình tổng hợp lại trong quá trình làm việc, hi vọng có thể hữu ích với mọi
+      người. Thân <3!
+    image: /images/90048972_1873657586101849_8429022495499091968_o.jpg
   - type: postsblock
     title: Recent Posts
     section_id: recent-posts
     actions:
-      - label: View Blog
+      - label: Xem tất cả bài viết
         url: blog/index.html
     component: posts_block.html
-    num_posts_displayed: 4
+    num_posts_displayed: 6
 menu:
   main:
     name: Home
