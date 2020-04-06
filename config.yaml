@@ -4,8 +4,8 @@ params:
   layout_style: default
   palette: orange
   header:
-    title: Blog của Lưu
-    tagline: Phan Duy Lưu
+    title: Phan Duy Lưu
+    tagline: ''
     profile_img: /images/bcl-1024x226-1-1.png
     bg: light
     has_nav: true
