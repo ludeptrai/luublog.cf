@@ -975,9 +975,11 @@ img {
   margin-bottom: 1.66667rem; }
 
 .post-thumbnail {
-  margin-bottom: 1.66667em; }
+  margin-bottom: 1.66667em;
+  height: 150px; }
   .post-thumbnail img {
-    width: 100%; }
+    width: 100%;
+    align-items: center; }
 
 .post-meta {
   color: #959ea9;
@@ -1116,11 +1118,11 @@ img {
 
 /* Content blocks */
 .block {
-  margin-bottom: 5em; }
+  margin-bottom: 2em; }
 
 .block.read-next {
   margin-bottom: 3.33333em;
-  margin-top: 5em; }
+  margin-top: 2em; }
 
 .block-title {
   color: #33383f;

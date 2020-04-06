@@ -33,9 +33,10 @@
 
 .post-thumbnail {
   margin-bottom: 1.66667em;
-
+  height: 150px;
   img {
     width: 100%;
+    align-items: center;
   }
 }
 
@@ -214,12 +215,12 @@
 
 /* Content blocks */
 .block {
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 }
 
 .block.read-next {
   margin-bottom: 3.33333em;
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 .block-title {
@@ -232,7 +233,6 @@
 
 .block-thumbnail {
   margin-bottom: 1.66667em;
-
   img {
     padding-right: 30px;
     width: 33.33%;
