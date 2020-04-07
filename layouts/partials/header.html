@@ -1,4 +1,5 @@
 <header id="masthead" class="site-header {{ .Site.Params.header.bg }}">
+  
   <div class="site-header-wrap">
     <div class="site-header-inside">
       <div class="site-branding">
@@ -29,6 +30,7 @@
           <div class="site-nav-inside">
             <ul class="menu">
               {{ range $item := .Site.Menus.main }}
+              
               <li class="menu-item {{ if eq $.URL $item.URL }} current-menu-item{{ end }}">
                 <a href="{{ $item.URL | relURL }}">{{ $item.Name }}</a>
               </li>
