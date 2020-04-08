@@ -1,6 +1,13 @@
 title: Blog của Lưu
 baseURL: /
 params:
+  favicon:
+    enable: true
+    path: /favicon.ico
+    version: 1.0
+    maskIicon: '#5bbad5'
+    tileColor: '#da532c'
+    themeColor: '#ffffff'
   layout_style: default
   palette: orange
   header:

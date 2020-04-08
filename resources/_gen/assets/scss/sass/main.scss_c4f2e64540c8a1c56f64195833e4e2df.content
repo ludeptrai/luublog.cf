@@ -5,6 +5,7 @@
  * normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css
  * ----------------------------------------------------------------------------
  */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap");
 html {
   -ms-text-size-adjust: 100%;
@@ -811,6 +812,8 @@ img {
 .menu-item {
   border-top: 1px solid #e9ebed; }
   .menu-item a {
+    font-family: 'Comfortaa', cursive;
+    font-size: normal;
     border: 0;
     color: inherit; }
 

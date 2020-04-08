@@ -4,15 +4,20 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 <script>(function($) {
   "use strict";
-
+  function myFunction(){
+    console.log('hi')
+  }
   jQuery(document).ready(function($) {
+    setTimeout(function() {
+      $(".preloader").fadeOut(300);
 
+  }, 800)
   });
 
-  jQuery(window).load(function() {
-      $(".preloader").fadeOut(1000);
+  // jQuery(window).load(function() {
+  //     $(".preloader").fadeOut(1000);
 
-  });
+  // });
 
 }(jQuery));
   </script>

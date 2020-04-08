@@ -1,16 +1,7 @@
 {{ define "content" }}
-<!-- <div class="sidenav">
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-<div class="main"> -->
-
 {{ range $section := .Params.sections }}
   {{ $include_dict := dict "section" $section "Site" $.Site }}
   {{ partial $section.component $include_dict }}
 {{ end }}
-<!-- </div> -->
 {{ end }}
 
