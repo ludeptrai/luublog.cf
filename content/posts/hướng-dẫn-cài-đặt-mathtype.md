@@ -3,11 +3,13 @@ title: Hướng dẫn cài đặt Mathtype
 subtitle: Tải MathType
 date: 2020-01-05T17:00:00.000Z
 thumb_img_path: /images/mathtype.png
+content_img_path: /images/mathtype.png
 excerpt: >-
   MathType, phần mềm dành riêng cho học sinh và sinh viên và những người yêu
   thích môn toán học, Mathtype đã tạo ra cho người dùng những ký tự dành cho
   công thức toán học trên bất kỳ trình soạn thảo văn bản nào trên hệ thống máy
   tính của bạn.
+canonical_url: /images/mathtype.png
 menu:
   main:
     name: ''
