@@ -6,10 +6,10 @@ sections:
     component: hero_block.html
     content: ''
   - type: contentblock
-    title: About
+    title: About me
     section_id: about
     actions:
-      - label: Contact Me
+      - label: Gửi tin nhắn cho tôi
         url: /contact
     component: content_block.html
     content: >-
