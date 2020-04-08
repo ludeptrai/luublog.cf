@@ -811,7 +811,7 @@ img {
 
 .menu-item {
   border-top: 1px solid #e9ebed;
-  padding: 0.5em 0; }
+  padding: 1em 0 0 0; }
   .menu-item a {
     border: 0;
     color: inherit; }
