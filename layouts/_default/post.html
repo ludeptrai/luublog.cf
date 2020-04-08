@@ -130,7 +130,17 @@
         datetime="{{ .Date | dateFormat "2006-01-02 15:04" }}">{{ .Date | dateFormat "Monday, January 2, 2006" }}</time>
     </footer><!-- .post-meta -->
   </article><!-- .post -->
- 
+ <!-- Related content -->
+{{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+<hr>
+<h3>Bài viết liên quan</h3>
+<ul>
+   {{ range . }}
+   <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+   {{ end }}
+</ul>
+{{ end }}
   <!-- Next/previous post navigation TBD -->
   <nav class="block read-next">
     <h2 class="block-title underline">Read Next</h2>
@@ -165,4 +175,5 @@
       </article>
     </div>
   </nav>
+  
 {{ end }}

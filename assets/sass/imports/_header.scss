@@ -2,6 +2,9 @@
  * Site Header
  * ----------------------------------------------------------------------------
  */
+ * {
+  box-sizing: border-box;
+}
 .site-header {
   background: #fff;
   border-bottom: 1px solid _palette(border);
@@ -46,21 +49,23 @@
 
   a {
     border: 0;
+    width: 100%;
   }
 
   .avatar {
-    border: 2px solid _palette(accent);
-    box-shadow: 0 0 1px 7px rgba(_palette(accent),.2);
-    border-radius: 100%;
+    // border: 2px solid _palette(accent);
+    // box-shadow: 0 0 1px 7px rgba(_palette(accent),.2);
+    // border-radius: 100%;
     display: block;
     object-fit: cover;
-    height: 45px;
-    width: 45px;
+    // height: 45px;
+    // width: 45px;
   }
 }
 
 .site-title {
-  color: _palette(secondary);
+  color: white;
+  // color: _palette(secondary);
   font-size: 1.11111rem;
   font-weight: bold;
   line-height: 1;
@@ -123,7 +128,7 @@
 
 .menu-item {
   border-top: 1px solid _palette(border);
-  padding: 1em 0 0 0;
+  // padding: 1em 0 0 0;
   // margin: 0.5em 0;
 
   a {
@@ -248,11 +253,11 @@
     margin: 0 0 1.66667em;
 
     .avatar {
-      border-width: 3px;
-      box-shadow: 0 0 1px 11px rgba(_palette(accent),.2);
-      object-fit: cover;
-      height: 100px;
-      width: 100px;
+      // border-width: 3px;
+      // box-shadow: 0 0 1px 11px rgba(_palette(accent),.2);
+      // object-fit: cover;
+      // height: 100px;
+      // width: 100px;
     }
   }
 
@@ -302,6 +307,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .avatar{
+    max-width: 200px;
+    margin-bottom: 5px;
+  }
   .menu--opened {
     .site {
       height: 100%;

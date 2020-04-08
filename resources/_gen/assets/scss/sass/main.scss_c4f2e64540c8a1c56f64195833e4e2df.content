@@ -712,6 +712,9 @@ img {
  * Site Header
  * ----------------------------------------------------------------------------
  */
+* {
+  box-sizing: border-box; }
+
 .site-header {
   background: #fff;
   border-bottom: 1px solid #e9ebed;
@@ -746,18 +749,14 @@ img {
   flex: 0 0 auto;
   margin: 0 15px 0 0; }
   .profile a {
-    border: 0; }
+    border: 0;
+    width: 100%; }
   .profile .avatar {
-    border: 2px solid #1de2bc;
-    box-shadow: 0 0 1px 7px rgba(29, 226, 188, 0.2);
-    border-radius: 100%;
     display: block;
-    object-fit: cover;
-    height: 45px;
-    width: 45px; }
+    object-fit: cover; }
 
 .site-title {
-  color: #33383f;
+  color: white;
   font-size: 1.11111rem;
   font-weight: bold;
   line-height: 1;
@@ -810,8 +809,7 @@ img {
   text-transform: uppercase; }
 
 .menu-item {
-  border-top: 1px solid #e9ebed;
-  padding: 1em 0 0 0; }
+  border-top: 1px solid #e9ebed; }
   .menu-item a {
     border: 0;
     color: inherit; }
@@ -899,12 +897,6 @@ img {
       max-height: 100px; }
   .profile {
     margin: 0 0 1.66667em; }
-    .profile .avatar {
-      border-width: 3px;
-      box-shadow: 0 0 1px 11px rgba(29, 226, 188, 0.2);
-      object-fit: cover;
-      height: 100px;
-      width: 100px; }
   .site-title {
     font-size: 1.33333rem;
     line-height: 1.2; }
@@ -933,6 +925,9 @@ img {
     padding-right: 30px; } }
 
 @media only screen and (max-width: 800px) {
+  .avatar {
+    max-width: 200px;
+    margin-bottom: 5px; }
   .menu--opened .site {
     height: 100%;
     left: 0;
@@ -1426,12 +1421,10 @@ img {
 .palette-orange .underline:after {
   border-color: #fc6e51; }
 
-.palette-orange .profile .avatar {
-  border-color: #fc6e51;
-  box-shadow: 0 0 1px 7px rgba(252, 110, 81, 0.2); }
-  @media only screen and (min-width: 801px) {
-    .palette-orange .profile .avatar {
-      box-shadow: 0 0 1px 11px rgba(252, 110, 81, 0.2); } }
+@media only screen and (min-width: 801px) {
+  .palette-orange .profile .avatar {
+    width: 100%; } }
+
 .palette-orange .menu-item a:hover,
 .palette-orange .current-menu-item a {
   color: #fc6e51; }

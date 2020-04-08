@@ -1,17 +1,79 @@
 <header id="masthead" class="site-header {{ .Site.Params.header.bg }}">
+  <!--Made with Love by Larry Geams-->
+<style>
+  .navig{
+    float: none; 
+    clear: both;
+    /* width: 30%;  */
+    margin: 10% auto;
+    /* background: #eee; */
+  }
   
+  .navig ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .navig li{
+    float: none; 
+    width: 100%;
+  }
+  
+  .navig li a{
+    display: block; 
+    width: 100%; 
+    padding: 20px; 
+    border-left: 5px solid; 
+    position: relative; 
+    z-index: 2;
+    text-decoration: none;
+    color: #444;
+    box-sizing: border-box;  
+    -moz-box-sizing: border-box;  
+    -webkit-box-sizing: border-box; 
+  }
+    
+  .navig li a:hover{ border-bottom: 0px; color: #fff !important;}
+  .navig li:first-child a{ border-left: 10px solid #3498db; }
+  .navig li:nth-child(2) a{ border-left: 10px solid #ffd071; }
+  .navig li:nth-child(3) a{ border-left: 10px solid #f0776c; }
+  .navig li:nth-child(4) a{ border-left: 10px solid #5bd7ec; }
+  .navig li:last-child a{ border-left: 10px solid #1abc9c; }
+  
+  .navig li a:after { 
+    content: "";
+    height: 100%; 
+    left: 0; 
+    top: 0; 
+    width: 0px;  
+    position: absolute; 
+    transition: all 0.3s ease 0s; 
+    -webkit-transition: all 0.3s ease 0s; 
+    z-index: -1;
+  }
+  
+  .navig li a:hover:after{ width: 100%; }
+  .navig li:first-child a:after{ background: #3498db; }
+  .navig li:nth-child(2) a:after{ background: #ffd071; }
+  .navig li:nth-child(3) a:after{ background: #f0776c; }
+  .navig li:nth-child(4) a:after{ background: #5bd7ec; }
+  .navig li:last-child a:after{ background: #1abc9c; }
+  
+  
+  </style>
+
   <div class="site-header-wrap">
-    <div class="site-header-inside">
-      <div class="site-branding">
+    <div style="padding:0"class="site-header-inside">
+      <div style="margin-top:2em" class="site-branding">
         {{ if .Site.Params.header.profile_img }}
-        <p class="profile">
-          <a href='{{ "/" | relURL }}'><img src="{{ .Site.Params.header.profile_img | relURL }}"
-              class="" alt="Author Avatar" /></a>
+        <p  style="margin:0"class="profile">
+          <a href='{{ "/" | relURL }}'><img src="{{ .Site.Params.header.profile_img | relURL }}" class="avatar" alt="Author Avatar" /></a>
         </p><!-- .profile -->
         {{ end }}
-        <div class="site-identity">
+        <div style="color: white;margin: 0;" class="site-identity">
           {{ if or (eq .Params.layout "home") (eq .Params.layout "blog") }}
-          <h1 class="site-title"><a href='{{ "/" | relURL }}'>{{ .Site.Params.header.title }}</a></h1>
+          <h1  class="site-title"><a href='{{ "/" | relURL }}'>{{ .Site.Params.header.title }}</a></h1>
           {{ else }}
           <p class="site-title"><a href='{{ "/" | relURL }}'>{{ .Site.Params.header.title }}</a></p>
           {{ end }}
@@ -24,14 +86,15 @@
             aria-hidden="true"></span></button>
         {{ end }}
       </div><!-- .site-branding -->
-      {{ if and .Site.Menus.main .Site.Params.header.has_nav }}
-      <nav id="main-navigation" class="site-navigation" aria-label="Main Navigation">
+      {{ if and .Site.Menus.main .Site.Params.header.has_nav }} 
+      <nav id="main-navigation" class="site-navigation navig" aria-label="Main Navigation">
         <div class="site-nav-wrap">
           <div class="site-nav-inside">
             <ul class="menu">
               {{ range $item := .Site.Menus.main }}
               
-              <li class="menu-item {{ if eq $.URL $item.URL }} current-menu-item{{ end }}">
+              <!-- <li class="menu-item {{ if eq $.URL $item.URL }} current-menu-item{{ end }}"> -->
+                <li class="menu-item {{ if eq $.URL $item.URL }} current-menu-item{{ end }}">
                 <a href="{{ $item.URL | relURL }}">{{ $item.Name }}</a>
               </li>
               {{ end }}

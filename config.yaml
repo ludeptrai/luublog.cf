@@ -18,5 +18,19 @@ params:
         new_window: true
 disableKinds:
   - RSS
-  - taxonomy
-  - taxonomyTerm
+  # - taxonomy
+  # - taxonomyTerm
+enableRobotsTXT: true
+removePathAccents: true
+permalinks:
+  post: '/bai-viet/:slug'
+  tags: '/t/:slug'
+related:
+  threshold: 80
+  includeNewer: true
+  toLower: false
+  indices:
+    - name: title
+      weight: 100
+    - name: body
+      weight: 100
