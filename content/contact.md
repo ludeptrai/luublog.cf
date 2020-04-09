@@ -1,10 +1,9 @@
 ---
-title: Contact
+title: Liên hệ
 menu:
   main:
-    name: Contact
+    name: Liên hệ
     weight: 5
 layout: contact
 ---
-
-To get in touch fill the form below.
+Nếu nó gì muốn nói, hãy gửi tin nhắn cho mình nhé
