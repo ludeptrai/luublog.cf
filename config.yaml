@@ -31,7 +31,7 @@ enableRobotsTXT: true
 removePathAccents: true
 permalinks:
   post: '/bai-viet/:slug'
-  tags: '/t/:slug'
+  tags: '/tags/:slug'
 related:
   threshold: 80
   includeNewer: true
@@ -41,3 +41,6 @@ related:
       weight: 100
     - name: body
       weight: 100
+taxonomies:
+  category: categories
+  tag: tags

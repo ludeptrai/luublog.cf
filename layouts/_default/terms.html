@@ -1,4 +1,4 @@
-{{ define "main" }}
+{{ define "content" }}
 
 <div class="container" role="main">
   <article class="post-preview">
@@ -6,6 +6,8 @@
       <div class="terms">
         <h4 class="term-name" >
           <a href="{{ .Page.Permalink }}/">{{ .Page.Title }}</a>
+          {{ $pageCount := len .Pages }}
+                    <!-- <p>{{ $pageCount }} post{{ if ne $pageCount 1 }}s{{ end }} </p> -->
           <span class="badge">{{ .Count }}</span>
         </h4>
       </div>
