@@ -2,7 +2,7 @@
 title: Bài viết
 menu:
   main:
-    name: Blog
+    name: Tất cả bài viết
     weight: 2
 layout: blog
 ---
