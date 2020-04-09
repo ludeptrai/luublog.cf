@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Bài viết
 menu:
   main:
     name: Blog
