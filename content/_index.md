@@ -1,10 +1,10 @@
 ---
-title: Home
+title: Trang chủ
 sections:
   - type: heroblock
     section_id: hero
     component: hero_block.html
-    content: ''
+    content: ""
   - type: contentblock
     title: About me
     section_id: about
@@ -12,11 +12,10 @@ sections:
       - label: Gửi tin nhắn cho tôi
         url: /contact
     component: content_block.html
-    content: >-
-      Hi, mình là Phan Duy Lưu, hiện tại đang là AI engineer tại TMA solutions.
-      Blog này là nơi tổng hợp 1 số bài viết thú vị trên mạng và những mẹo vặt
-      mình tổng hợp lại trong quá trình làm việc, hi vọng có thể hữu ích với mọi
-      người. Thân <3!
+    content: Hi, mình là Phan Duy Lưu, hiện tại đang là AI engineer tại TMA
+      solutions. Blog này là nơi tổng hợp 1 số bài viết thú vị trên mạng và
+      những mẹo vặt mình tổng hợp lại trong quá trình làm việc, hi vọng có thể
+      hữu ích với mọi người. Thân <3!
     image: /images/90048972_1873657586101849_8429022495499091968_o.jpg
   - type: postsblock
     title: Recent Posts
