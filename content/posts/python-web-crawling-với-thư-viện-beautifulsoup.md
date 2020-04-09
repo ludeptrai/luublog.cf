@@ -49,7 +49,6 @@ Demo
 Trước hết chúng ta cần lấy nội dung của trang web và parse nó như sau:
 
 ```
-<pre class="wp-block-code">```
 from bs4 import BeautifulSoup
 import urllib.request
 
@@ -58,14 +57,13 @@ page = urllib.request.urlopen(url)
 soup = BeautifulSoup(page, 'html.parser')
 
 ```
-```
 
-<figure class="wp-block-image">[![Screenshot_from_2018-03-10_09-08-57.png](https://s25.postimg.cc/bpqnasnjz/Screenshot_from_2018-03-10_09-08-57.png)](https://postimg.cc/image/8vnhxcldn/)</figure>Tiếp theo chúng ta sẽ inspect và lấy thử một tin tức trước. Nhấn chuột phải vào tin tức đầu tiên của trang web và chọn inspect, bạn sẽ thấy thẻ `<a>` chứa tiêu đề của tin tức, được lồng bên trong thẻ `<section class="featured container clearfix">`.
+<figure class="wp-block-image">[![Screenshot_from_2018-03-10_09-08-57.png](https://s25.postimg.cc/bpqnasnjz/Screenshot_from_2018-03-10_09-08-57.png)](https://postimg.cc/image/8vnhxcldn/)</figure>
+Tiếp theo chúng ta sẽ inspect và lấy thử một tin tức trước. Nhấn chuột phải vào tin tức đầu tiên của trang web và chọn inspect, bạn sẽ thấy thẻ `<a>` chứa tiêu đề của tin tức, được lồng bên trong thẻ `<section class="featured container clearfix">`.
 
 Chúng ta có thể lấy ra tiêu đề và liên kết bằng cách dùng phương thức [find()](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#find) như sau:
 
 ```
-<pre class="wp-block-code">```
 from bs4 import BeautifulSoup
 import urllib.request
 
@@ -79,15 +77,12 @@ link = new_feed.get('href')
 print('Title: {} - Link: {}'.format(title, link))
 
 ```
-```
 
 Chạy đoạn script trên, bạn sẽ được kết quả:
 
 ```
-<pre class="wp-block-code">```
 Title: Tài xế đầu tiên dừng ôtô quá 5 phút tại trạm BOT bị phạt - Link: https://vnexpress.net/tin-tuc/thoi-su/giao-thong/tai-xe-dau-tien-dung-oto-qua-5-phut-tai-tram-bot-bi-phat-3720924.html
 
-```
 ```
 
 Thay vì chỉ lấy một tin như trên, bạn có thể lấy tất cả các tin tức bên cạnh tin tức vừa lấy như sau bằng cách dùng [find\_all()](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#find-all):
