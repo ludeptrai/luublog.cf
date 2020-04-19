@@ -3,9 +3,9 @@
  * ----------------------------------------------------------------------------
  */
 .inner {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1080px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // max-width: 1080px;
 }
 
 .site {
@@ -13,21 +13,26 @@
   position: relative;
 }
 
-.site-content,
+// .site-content,
+.bounding-box,
 .site-header-inside,
 .site-nav-inside {
-  padding-left: 3vw;
-  padding-right: 3vw;
-}
-
-.site-content {
-  padding-bottom: 2.5em;
+    padding-left: 3vw;
+    padding-right: 3vw;
+      padding-bottom: 2.5em;
   padding-top: 2.5em;
+}
+.bounding-box{
+  max-width: 1080px;
+}
+.site-content {
+  // padding-bottom: 2.5em;
+  // padding-top: 2.5em;
 
   @media only screen and (min-width: 801px) {
     margin-left: 30vw;
-    padding-bottom: 3.33333em;
-    padding-top: 3.33333em;
+    // padding-bottom: 3.33333em;
+    // padding-top: 3.33333em;
   }
 
   @media only screen and (min-width: 1001px) {
@@ -41,9 +46,9 @@
 
 .site-main,
 .site-footer {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1080px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // max-width: 1080px;
 }
 
 .style-overflow {

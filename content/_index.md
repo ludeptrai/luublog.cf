@@ -27,7 +27,7 @@ sections:
     num_posts_displayed: 6
 menu:
   main:
-    name: Home
+    name: Trang chủ
     weight: 1
 layout: home
 ---
