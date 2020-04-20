@@ -1,16 +1,25 @@
 {{ define "content" }}
-
+<style>
+  .post-inside {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .post-inside:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }</style>
   <div class="post-feed bounding-box">
     {{ $display_posts := ((.Site.GetPage "section" "/posts").Pages).ByDate.Reverse }}
     {{ range $post := $display_posts }}
     <article class="post">
-      <div class="post-inside">
+      <div class="post-inside" >
         {{ if $post.Params.thumb_img_path }}
         <a class="post-thumbnail" href="{{ $post.URL }}">
           <img class="thumbnail" src="{{ $post.Params.thumb_img_path | relURL }}" alt="{{ $post.Params.title }}" />
         </a>
         {{ end }}
-        <header class="post-header">
+        <header class="post-header ">
           <h2 class="post-title"><a href="{{ $post.URL }}" rel="bookmark">{{ $post.Params.title }}</a></h2>
         </header><!-- .post-header -->
         <div class="post-content">

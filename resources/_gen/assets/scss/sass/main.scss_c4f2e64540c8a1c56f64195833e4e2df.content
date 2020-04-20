@@ -999,8 +999,7 @@ img {
     flex-direction: column;
     margin-bottom: 1.66667em; }
   .post-feed .post-inside {
-    border: 1px solid #e9ebed;
-    border-radius: 5px;
+    border-radius: 15px 15px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1013,7 +1012,7 @@ img {
     margin: 0 0.833333em; }
   .post-feed .post-thumbnail {
     border: 0;
-    border-radius: 5px 5px 0 0;
+    border-radius: 15px 15px 0 0;
     display: block;
     margin: 0;
     position: relative;
@@ -1023,7 +1022,7 @@ img {
       display: block;
       padding-top: 66.666%; }
     .post-feed .post-thumbnail img {
-      border-radius: 5px 5px 0 0;
+      border-radius: 15px 15px 0 0;
       height: 100%;
       left: 0;
       object-fit: cover;

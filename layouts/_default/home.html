@@ -1,5 +1,7 @@
 {{ define "content" }}
 
+
+
 <div class="bounding-box">
   {{ range $section := .Params.sections }}
     {{ $include_dict := dict "section" $section "Site" $.Site }}

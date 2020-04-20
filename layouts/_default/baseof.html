@@ -17,11 +17,11 @@
     </head>
     <body>
         
-        <div id="page" class="site style-{{ .Site.Params.layout_style }} palette-{{ .Site.Params.palette }}">
+        <div id="page" class="site style-{{ .Site.Params.layout_style }} palette-{{ .Site.Params.palette }}" >
           {{ partial "header.html" . }}
-          <div id="content" class="site-content">
+          <div id="content" class="site-content" >
             <div class="inner">
-              <main id="main" class="site-main">
+              <main id="main" class="site-main" style="background-color: rgba(250,250,250,1);">
                 {{ block "content" . }}{{ end }}
               </main><!-- .site-main -->
               {{ partial "footer.html" . }}
