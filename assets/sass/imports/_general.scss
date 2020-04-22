@@ -116,27 +116,61 @@ pre {
     top: 0;
   }
 }
+blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
 
-blockquote {
-  border-bottom: 1px solid _palette(secondary);
-  border-top: 3px solid _palette(secondary);
-  font-size: 2rem;
-  line-height: 1.25;
-  margin: 2.5rem 0;
-  padding-bottom: 1em;
-  padding-top: 0.83333em;
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
 
-  &:first-child {
-    margin-top: 0
-  }
+blockquote::after{
+  content: '';
+}
 
-  p {
-    margin-bottom: 0.5em;
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+// blockquote {
+//   border-bottom: 1px solid _palette(secondary);
+//   border-top: 3px solid _palette(secondary);
+//   font-size: 2rem;
+//   line-height: 1.25;
+//   margin: 2.5rem 0;
+//   padding-bottom: 1em;
+//   padding-top: 0.83333em;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
+//   &:first-child {
+//     margin-top: 0
+//   }
+
+//   p {
+//     margin-bottom: 0.5em;
+
+//     &:last-child {
+//       margin-bottom: 0;
+//     }
+//   }
 
   small,
   cite {

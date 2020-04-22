@@ -1,7 +1,43 @@
 <!doctype html>
 <html>
     <head>    
-        
+     
+        <style>
+          #style-6::-webkit-scrollbar-track
+          {
+            -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+            background-color: #F5FFFF;
+          }
+          
+          #style-6::-webkit-scrollbar
+          {
+            width: 10px;
+            background-color: #fc6e51;
+          }
+          
+          #style-6::-webkit-scrollbar-thumb
+          {border-radius: 10px;
+            background-color: #fc6e51;	
+            background-image: -webkit-linear-gradient(45deg,
+                                                      rgba(255, 255, 255, .2) 25%,
+                                  transparent 25%,
+                                  transparent 50%,
+                                  rgba(255, 255, 255, .2) 50%,
+                                  rgba(255, 255, 255, .2) 75%,
+                                  transparent 75%,
+                                  transparent)
+          }
+          .scrollbar
+          {
+            float: left;
+            width: 100%;
+            height: 100vh;
+            background: #eee;
+            overflow-y: auto;
+            margin-bottom: 25px;
+          }
+          </style>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,8 +52,8 @@
         
     </head>
     <body>
-        
-        <div id="page" class="site style-{{ .Site.Params.layout_style }} palette-{{ .Site.Params.palette }}" >
+        <div id="style-6" class="scrollbar">
+        <div id="page" class="site style-{{ .Site.Params.layout_style }} palette-{{ .Site.Params.palette }}">
           {{ partial "header.html" . }}
           <div id="content" class="site-content" >
             <div class="inner">
@@ -31,5 +67,6 @@
         <!-- Scripts -->
         <script src="{{ "assets/js/plugins.js" | relURL }}"></script>
         <script src="{{ "assets/js/main.js" | relURL }}"></script>
+      </div>
     </body> 
 </html>

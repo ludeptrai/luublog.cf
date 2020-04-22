@@ -179,7 +179,7 @@ Chúng ta có thể thấy rõ hai nhóm dữ liệu riêng biệt trên không 
 
 <div class="wp-block-image is-style-default">
 
-<figure class="aligncenter">![Sơ đồ phân tán của bộ dữ liệu phân cụm tổng hợp với các điểm được tô màu bởi cụm đã biết](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/Scatter-Plot-of-Synthetic-Clustering-Dataset-With-Points-Colored-By-Known-Cluster.png)</figure>
+![Sơ đồ phân tán của bộ dữ liệu phân cụm tổng hợp với các điểm được tô màu bởi cụm đã biết](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/Scatter-Plot-of-Synthetic-Clustering-Dataset-With-Points-Colored-By-Known-Cluster.png)
 
 </div>
 
@@ -229,7 +229,7 @@ Trong trường hợp này, ta không thể đạt được kết quả tốt.
 
 <div class="wp-block-image">
 
-<figure class="aligncenter">![Sơ đồ phân tán dữ liệu với các cụm được xác định bằng cách sử dụng Affinity Propagation](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/Scatter-Plot-of-Dataset-With-Clusters-Identified-Using-Affinity-Propagation.png)</figure>
+![Sơ đồ phân tán dữ liệu với các cụm được xác định bằng cách sử dụng Affinity Propagation](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/Scatter-Plot-of-Dataset-With-Clusters-Identified-Using-Affinity-Propagation.png)
 
 </div>
 
@@ -275,7 +275,7 @@ Trong trường hợp này, ta xác định được một nhóm hợp lý.
 
 <div class="wp-block-image">
 
-<figure class="aligncenter">![Sơ đồ phân tán dữ liệu với các cụm được xác định bằng cách sử dụng Agglomerative Clustering](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/Scatter-Plot-of-Dataset-With-Clusters-Identified-Using-Agglomerative-Clustering.png)</figure>
+![Sơ đồ phân tán dữ liệu với các cụm được xác định bằng cách sử dụng Agglomerative Clustering](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/Scatter-Plot-of-Dataset-With-Clusters-Identified-Using-Agglomerative-Clustering.png)
 
 </div>
 
@@ -329,7 +329,7 @@ Trong trường hợp này, thuật toán làm việc rất tốt.
 
 <div class="wp-block-image">
 
-<figure class="aligncenter">![Sơ đồ phân tán dữ liệu với các cụm được xác định bằng cách sử dụng BIRCH Clustering](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/Scatter-Plot-of-Dataset-With-Clusters-Identified-Using-BIRCH-Clustering.png)</figure>
+![Sơ đồ phân tán dữ liệu với các cụm được xác định bằng cách sử dụng BIRCH Clustering](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/Scatter-Plot-of-Dataset-With-Clusters-Identified-Using-BIRCH-Clustering.png)
 
 </div>
 
@@ -380,8 +380,7 @@ Trong trường hợp này, thậut toán tìm ra những cụm hợp lý, tuy n
 
 <div class="wp-block-image">
 
-<figure class="aligncenter">![Sơ đồ phân tán dữ liệu với các cụm được xác định bằng cách sử dụng Clustering](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/Scatter-Plot-of-Dataset-With-Clusters-Identified-Using-DBSCAN-Clustering.png)</figure>
-
+![Sơ đồ phân tán dữ liệu với các cụm được xác định bằng cách sử dụng Clustering](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/Scatter-Plot-of-Dataset-With-Clusters-Identified-Using-DBSCAN-Clustering.png)
 </div>
 
 Sơ đồ phân tán dữ liệu với các cụm được xác định bằng cách sử dụng Clustering
