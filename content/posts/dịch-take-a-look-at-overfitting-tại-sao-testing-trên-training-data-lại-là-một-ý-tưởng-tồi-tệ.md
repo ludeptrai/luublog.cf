@@ -28,10 +28,6 @@ Giả sử bạn đang có trong tay tập dữ liệu [iris flower dataset](htt
 
 ![Irises](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2014/03/irises.jpg)
 
-```
-
-```
-
 Mô hình tốt nhất chính là bản thân tập dữ liệu. Nếu bạn lấy một vài điểm dữ liệu nhất định, bạn hoàn toàn có thể đưa ra dự đoán ngay lập tức bằng việc tra cứu trong tập dữ liệu đó, cách làm này luôn luôn chính xác.
 
 Đó chính là vấn đề khi bạn train và test trên cùng một tập dữ liệu.
@@ -54,7 +50,7 @@ Hạn chế quan trọng của một descriptive model là nó bị giới hạn
 
 Hãy xem xét một bài toán classification, mục tiêu là phân loại các điểm dữ liệu thành màu đỏ, hoặc màu xanh[](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2014/03/Modeling-a-Target-Function.jpg)
 
-![Anime heterochromia / odd eyes blue red - green orange (com imagens) | Anime  kawaii, Menina anime](https://i.pinimg.com/originals/f8/0e/26/f80e2689b2a05456bf52ae59ff1e8467.jpg)
+![phan duy luu - overfitting and train test split](https://i.pinimg.com/originals/f8/0e/26/f80e2689b2a05456bf52ae59ff1e8467.jpg)
 
 điểm dữ liệu màu đỏ có vẻ phù hợp hơn
 
