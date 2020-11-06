@@ -6,4 +6,4 @@ menu:
     weight: 5
 layout: contact
 ---
-Nếu nó gì muốn nói, hãy gửi tin nhắn cho mình nhé
+Nếu có gì muốn nói, hãy gửi tin nhắn cho mình nhé
